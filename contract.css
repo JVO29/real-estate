@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contract-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.party-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.party {
+    width: 45%;
+}
+
+.party p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}

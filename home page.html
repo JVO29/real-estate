@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.search form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.search label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1c40f;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+} 
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstateFinder</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Embedded styles are kept here for simplicity */
+        /* ... existing styles ... */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to RealEstateFinder</h1>
+        <p>Discover your dream home with our online real estate search system.</p>
+    </header>
+
+    <main>
+        <section class="search">
+            <h2>Search for properties</h2>
+            <form action="submit_form.php" method="post">
+                <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required placeholder="e.g., City, Neighborhood">
+
+                    <label for="min-price">Minimum Price:</label>
+                    <input type="number" id="min-price" name="min-price">
+
+                    <label for="max-price">Maximum Price:</label>
+                    <input type="number" id="max-price" name="max-price">
+
+                    <label for="bedrooms">Bedrooms:</label>
+                    <input type="number" id="bedrooms" name="bedrooms" placeholder="Number of bedrooms">
+
+                    <label for="bathrooms">Bathrooms:</label>
+                    <input type="number" id="bathrooms" name="bathrooms" placeholder="Number of bathrooms">
+
+                    <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Search Results</h2>
+            <ul>
+                <!-- Property results will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 RealEstateFinder. All rights reserved.</p>
+    </footer>
+</body>
+</html>

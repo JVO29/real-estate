@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Real Estate Search System</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<h2>Online Real Estate Search System</h2>
+
+<form action="/search_properties" method="post">
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required><br>
+
+    <label for="property_type">Property Type:</label>
+    <input type="text" id="property_type" name="property_type" required><br>
+
+    <label for="min_price">Minimum Price:</label>
+    <input type="tel" id="min_price" name="min_price" pattern="[0-9]*" required><br>
+
+    <label for="max_price">Maximum Price:</label>
+    <input type="tel" id="max_price" name="max_price" pattern="[0-9]*" required><br>
+
+    <button type="submit">Search</button>
+</form>
+
+</body>
+</html>
